@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GlobalSOS — Esta página estará disponível em breve." />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Em breve — GlobalSOS</title>
+  <link rel="icon" type="image/png" href="Icone/iconeApp.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="Icone/iconeApp.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#050B14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="GlobalSOS" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="security.css" />
+  <script>
+    (function(){
+      var s=localStorage.getItem('gsos_theme');
+      var d=window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', s||(d?'dark':'light'));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="security.html" class="logo" aria-label="GlobalSOS — Privacidade & Segurança">
+        <img src="Icone/iconeApp.png" width="32" height="32" class="logo__img" alt="" aria-hidden="true" />
+        <span class="logo__text">Global<span class="logo__sos">SOS</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="security.html" class="nav__link nav__link--active">Privacidade</a>
+      </nav>
+
+      <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Selecionar idioma">
+        <button class="lang-btn active" data-lang="pt" aria-pressed="true"  aria-label="Português">PT</button>
+        <button class="lang-btn"        data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+        <button class="lang-btn"        data-lang="es" aria-pressed="false" aria-label="Español">ES</button>
+        <button class="lang-btn"        data-lang="fr" aria-pressed="false" aria-label="Français">FR</button>
+        <button class="lang-btn"        data-lang="de" aria-pressed="false" aria-label="Deutsch">DE</button>
+        <button class="lang-btn"        data-lang="it" aria-pressed="false" aria-label="Italiano">IT</button>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <a href="security.html" class="btn btn--outline btn--small header__cta">Privacidade</a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav>
+      <a href="security.html" class="mobile-nav__link">Privacidade &amp; Segurança</a>
+    </nav>
+    <div class="mobile-lang-switcher" role="group" aria-label="Selecionar idioma">
+      <button class="lang-btn active" data-lang="pt" aria-pressed="true"  aria-label="Português">PT</button>
+      <button class="lang-btn"        data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+      <button class="lang-btn"        data-lang="es" aria-pressed="false" aria-label="Español">ES</button>
+      <button class="lang-btn"        data-lang="fr" aria-pressed="false" aria-label="Français">FR</button>
+      <button class="lang-btn"        data-lang="de" aria-pressed="false" aria-label="Deutsch">DE</button>
+      <button class="lang-btn"        data-lang="it" aria-pressed="false" aria-label="Italiano">IT</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-hero-title">
+      <div class="container page-hero__inner">
+        <div class="page-hero__icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <polyline points="12 7 12 12 15 14"/>
+          </svg>
+        </div>
+        <h1 class="page-hero__title" id="page-hero-title">Em breve</h1>
+        <p class="page-hero__subtitle">
+          Esta página ainda está em construção. Estamos trabalhando para
+          disponibilizá-la o quanto antes — volte em breve.
+        </p>
+        <div class="page-hero__badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Conteúdo em preparação</span>
+        </div>
+        <div style="margin-top: 32px;">
+          <a href="security.html" class="btn btn--primary btn--large">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+            </svg>
+            <span>Voltar para Privacidade</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="security.html" class="logo" aria-label="GlobalSOS">
+            <img src="Icone/iconeApp.png" width="28" height="28" class="logo__img" alt="" aria-hidden="true" />
+            <span class="logo__text">Global<span class="logo__sos">SOS</span></span>
+          </a>
+          <p class="footer__tagline">Porque na emergência,<br/>cada segundo conta.</p>
+        </div>
+
+        <nav class="footer__links" aria-label="Links do rodapé">
+          <div class="footer__col">
+            <h3 class="footer__col-title">Plataforma</h3>
+            <a href="security.html" class="footer__link">Privacidade</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2025 GlobalSOS. Feito para salvar vidas.</p>
+        <p class="footer__disclaimer">Em caso de emergência real, ligue diretamente para o serviço de socorro local.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    'use strict';
+    document.addEventListener('DOMContentLoaded', () => {
+      // Theme toggle
+      const themeBtn = document.getElementById('themeToggle');
+      if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+          const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('gsos_theme', next); } catch {}
+        });
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('gsos_theme'))
+            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        });
+      }
+
+      // Header scroll
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 8);
+      }, { passive: true });
+
+      // Mobile nav
+      const toggle = document.getElementById('menuToggle');
+      const nav    = document.getElementById('mobileNav');
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        nav.setAttribute('aria-hidden', String(!open));
+      });
+      nav.querySelectorAll('.mobile-nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          nav.setAttribute('aria-hidden', 'true');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
