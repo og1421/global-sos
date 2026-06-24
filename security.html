@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt" data-i18n-title="page_title_security" data-i18n-description="page_description_security">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GlobalSOS — Saiba como protegemos seus dados e respeitamos sua privacidade." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="GlobalSOS" />
+  <meta property="og:url"         content="https://globalsos.app/security.html" />
+  <meta property="og:title"       content="Privacidade & Segurança — GlobalSOS" />
+  <meta property="og:description" content="O GlobalSOS não coleta dados pessoais identificáveis. Saiba como protegemos sua privacidade." />
+  <meta property="og:image"       content="https://globalsos.app/icons/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="GlobalSOS — Números de emergência de 206 países" />
+  <meta property="og:locale"      content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Privacidade & Segurança — GlobalSOS" />
+  <meta name="twitter:description" content="O GlobalSOS não coleta dados pessoais identificáveis. Saiba como protegemos sua privacidade." />
+  <meta name="twitter:image"       content="https://globalsos.app/icons/og-image.png" />
+  <meta name="twitter:image:alt"   content="GlobalSOS — Números de emergência de 206 países" />
+  <link rel="canonical" href="https://globalsos.app/security.html" />
+  <title>Privacidade & Segurança — GlobalSOS</title>
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#050B14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="GlobalSOS" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    (function(){
+      var s=localStorage.getItem('gsos_theme');
+      var d=window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', s||(d?'dark':'light'));
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <a href="index.html" class="logo" aria-label="GlobalSOS — Página inicial">
+        <img src="icons/apple-touch-icon.png" width="32" height="32" class="logo__img" alt="" aria-hidden="true" />
+        <span class="logo__text">Global<span class="logo__sos">SOS</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html#search"   class="nav__link" data-i18n="nav_search">Buscar</a>
+        <a href="index.html#features" class="nav__link" data-i18n="nav_features">Recursos</a>
+        <a href="index.html#app"      class="nav__link" data-i18n="nav_apps">Apps</a>
+        <a href="security.html"       class="nav__link nav__link--active" data-i18n="nav_security">Privacidade</a>
+      </nav>
+
+      <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Selecionar idioma">
+        <button class="lang-btn active" data-lang="pt" aria-pressed="true"  aria-label="Português">PT</button>
+        <button class="lang-btn"        data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+        <button class="lang-btn"        data-lang="es" aria-pressed="false" aria-label="Español">ES</button>
+        <button class="lang-btn"        data-lang="fr" aria-pressed="false" aria-label="Français">FR</button>
+        <button class="lang-btn"        data-lang="de" aria-pressed="false" aria-label="Deutsch">DE</button>
+        <button class="lang-btn"        data-lang="it" aria-pressed="false" aria-label="Italiano">IT</button>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+
+      <a href="index.html#app" class="btn btn--outline btn--small header__cta" data-i18n="nav_download">Baixar App</a>
+
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <nav>
+      <a href="index.html#search"   class="mobile-nav__link" data-i18n="mobile_search">Buscar Emergências</a>
+      <a href="index.html#features" class="mobile-nav__link" data-i18n="nav_features">Recursos</a>
+      <a href="index.html#app"      class="mobile-nav__link" data-i18n="mobile_apps">Apps iOS &amp; Android</a>
+      <a href="security.html"       class="mobile-nav__link" data-i18n="mobile_security">Privacidade &amp; Segurança</a>
+      <a href="terms.html"          class="mobile-nav__link" data-i18n="mobile_terms">Termos de Uso</a>
+    </nav>
+    <div class="mobile-lang-switcher" role="group" aria-label="Selecionar idioma">
+      <button class="lang-btn active" data-lang="pt" aria-pressed="true"  aria-label="Português">PT</button>
+      <button class="lang-btn"        data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+      <button class="lang-btn"        data-lang="es" aria-pressed="false" aria-label="Español">ES</button>
+      <button class="lang-btn"        data-lang="fr" aria-pressed="false" aria-label="Français">FR</button>
+      <button class="lang-btn"        data-lang="de" aria-pressed="false" aria-label="Deutsch">DE</button>
+      <button class="lang-btn"        data-lang="it" aria-pressed="false" aria-label="Italiano">IT</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-hero-title">
+      <div class="container page-hero__inner">
+        <div class="page-hero__icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h1 class="page-hero__title" id="page-hero-title" data-i18n="sec_hero_title">Privacidade &amp; Segurança</h1>
+        <p class="page-hero__subtitle" data-i18n="sec_hero_subtitle">
+          O GlobalSOS foi construído com uma premissa clara: você não precisa
+          nos dar nenhum dado pessoal para receber ajuda de emergência.
+        </p>
+        <div class="page-hero__badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span data-i18n="sec_hero_badge">Última atualização: Maio de 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="policy-wrap">
+      <div class="container policy-container">
+
+        <!-- Sidebar / TOC -->
+        <aside class="policy-toc" aria-label="Índice">
+          <p class="toc-label" data-i18n="sec_toc_label">Nesta página</p>
+          <nav>
+            <a href="#resumo"         class="toc-link" data-i18n="sec_toc_resumo">Resumo</a>
+            <a href="#coleta"         class="toc-link" data-i18n="sec_toc_coleta">O que coletamos</a>
+            <a href="#nao-coletamos"  class="toc-link" data-i18n="sec_toc_nao">O que NÃO coletamos</a>
+            <a href="#permissoes"     class="toc-link" data-i18n="sec_toc_permissoes">Permissões do App</a>
+            <a href="#site"           class="toc-link" data-i18n="sec_toc_site">Sobre o Site</a>
+            <a href="#dados-numeros"  class="toc-link" data-i18n="sec_toc_numeros">Base de Números</a>
+            <a href="#direitos"       class="toc-link" data-i18n="sec_toc_direitos">Seus Direitos</a>
+            <a href="#contato"        class="toc-link" data-i18n="sec_toc_contato">Contato</a>
+          </nav>
+        </aside>
+
+        <!-- Main content -->
+        <article class="policy-content">
+
+          <!-- RESUMO -->
+          <section class="policy-section" id="resumo" aria-labelledby="resumo-title">
+            <div class="policy-highlight">
+              <div class="policy-highlight__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div>
+                <strong data-i18n="sec_resumo_highlight_strong">Resumo em uma linha</strong>
+                <p data-i18n="sec_resumo_highlight_p">O GlobalSOS não coleta dados pessoais identificáveis. Ponto.</p>
+              </div>
+            </div>
+            <h2 class="policy-title" id="resumo-title" data-i18n="sec_resumo_title">Resumo</h2>
+            <p data-i18n="sec_resumo_p1">
+              Acreditamos que acesso a informações de emergência é um direito básico, não um produto.
+              Por isso, o GlobalSOS funciona completamente sem que você precise criar conta, fazer login
+              ou fornecer qualquer dado pessoal.
+            </p>
+            <p data-i18n="sec_resumo_p2">
+              Este documento detalha exatamente o que acontece — e o que <em>não</em> acontece —
+              com suas informações quando você usa nosso site ou aplicativo.
+            </p>
+          </section>
+
+          <!-- O QUE COLETAMOS -->
+          <section class="policy-section" id="coleta" aria-labelledby="coleta-title">
+            <h2 class="policy-title" id="coleta-title" data-i18n="sec_coleta_title">O que coletamos</h2>
+            <p data-i18n="sec_coleta_intro">
+              Para que o site e o app funcionem corretamente, os seguintes dados técnicos
+              são processados <strong>localmente no seu dispositivo</strong> e nunca enviados
+              a servidores externos:
+            </p>
+            <ul class="policy-list">
+              <li data-i18n="sec_coleta_item1">
+                <strong>Idioma do sistema</strong> — detectado pelo navegador para exibir
+                o site no idioma correto automaticamente. Não é armazenado em nossos servidores.
+              </li>
+              <li data-i18n="sec_coleta_item2">
+                <strong>Preferência de idioma</strong> — se você troca o idioma manualmente,
+                essa preferência é salva <em>apenas no seu dispositivo</em> via <code>localStorage</code>.
+              </li>
+              <li data-i18n="sec_coleta_item3">
+                <strong>IP para detecção de país</strong> — ao carregar o site, fazemos
+                uma consulta anônima ao serviço <code>ipapi.co</code> para sugerir o idioma
+                baseado no seu país. Nenhum dado seu é armazenado por nós nesse processo.
+              </li>
+            </ul>
+          </section>
+
+          <!-- O QUE NÃO COLETAMOS -->
+          <section class="policy-section" id="nao-coletamos" aria-labelledby="nao-title">
+            <h2 class="policy-title" id="nao-title" data-i18n="sec_nao_title">O que <span class="text-red">não</span> coletamos</h2>
+            <p data-i18n="sec_nao_intro">A lista do que <strong>nunca</strong> coletamos é mais importante do que o que coletamos:</p>
+            <div class="no-collect-grid">
+              <div class="no-collect-item">
+                <span class="no-collect-icon" aria-hidden="true">🚫</span>
+                <div>
+                  <strong data-i18n="sec_nao_1_title">Nenhum dado cadastral</strong>
+                  <p data-i18n="sec_nao_1_text">Nome, e-mail, CPF, telefone — não pedimos, não coletamos, não armazenamos.</p>
+                </div>
+              </div>
+              <div class="no-collect-item">
+                <span class="no-collect-icon" aria-hidden="true">🚫</span>
+                <div>
+                  <strong data-i18n="sec_nao_2_title">Nenhum histórico de buscas</strong>
+                  <p data-i18n="sec_nao_2_text">O que você pesquisa permanece no seu dispositivo. Nós não sabemos o que você buscou.</p>
+                </div>
+              </div>
+              <div class="no-collect-item">
+                <span class="no-collect-icon" aria-hidden="true">🚫</span>
+                <div>
+                  <strong data-i18n="sec_nao_3_title">Nenhuma localização persistida</strong>
+                  <p data-i18n="sec_nao_3_text">O GPS é usado só para identificar seu país. Sua localização não é enviada nem armazenada.</p>
+                </div>
+              </div>
+              <div class="no-collect-item">
+                <span class="no-collect-icon" aria-hidden="true">🚫</span>
+                <div>
+                  <strong data-i18n="sec_nao_4_title">Sem cookies de rastreamento</strong>
+                  <p data-i18n="sec_nao_4_text">Não utilizamos cookies de terceiros, pixels de rastreamento ou ferramentas de retargeting.</p>
+                </div>
+              </div>
+              <div class="no-collect-item">
+                <span class="no-collect-icon" aria-hidden="true">🚫</span>
+                <div>
+                  <strong data-i18n="sec_nao_5_title">Sem perfis de usuário</strong>
+                  <p data-i18n="sec_nao_5_text">Não existe um "perfil seu" nos nossos sistemas. Você é completamente anônimo para nós.</p>
+                </div>
+              </div>
+              <div class="no-collect-item">
+                <span class="no-collect-icon" aria-hidden="true">🚫</span>
+                <div>
+                  <strong data-i18n="sec_nao_6_title">Sem venda de dados</strong>
+                  <p data-i18n="sec_nao_6_text">Não monetizamos dados de usuários. Nunca. Nosso modelo não depende disso.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PERMISSÕES DO APP -->
+          <section class="policy-section" id="permissoes" aria-labelledby="perm-title">
+            <h2 class="policy-title" id="perm-title" data-i18n="sec_perm_title">Permissões do App (iOS &amp; Android)</h2>
+            <p data-i18n="sec_perm_intro">
+              Os aplicativos móveis do GlobalSOS solicitam apenas as permissões estritamente
+              necessárias para o funcionamento:
+            </p>
+            <div class="perm-table">
+              <div class="perm-row perm-row--header">
+                <span data-i18n="sec_perm_header_name">Permissão</span>
+                <span data-i18n="sec_perm_header_purpose">Finalidade</span>
+                <span data-i18n="sec_perm_header_sent">Dados enviados?</span>
+              </div>
+              <div class="perm-row">
+                <span class="perm-name">
+                  <span aria-hidden="true">📍</span> <span data-i18n="sec_perm_location_name">Localização</span>
+                </span>
+                <span class="perm-desc" data-i18n="sec_perm_location_desc">Identificar automaticamente o país para mostrar os números locais</span>
+                <span class="perm-status perm-status--no" data-i18n="sec_perm_status_no">Não</span>
+              </div>
+              <div class="perm-row">
+                <span class="perm-name">
+                  <span aria-hidden="true">📞</span> <span data-i18n="sec_perm_phone_name">Telefone</span>
+                </span>
+                <span class="perm-desc" data-i18n="sec_perm_phone_desc">Permitir ligar diretamente para os serviços de emergência pelo app</span>
+                <span class="perm-status perm-status--no" data-i18n="sec_perm_status_no">Não</span>
+              </div>
+              <div class="perm-row">
+                <span class="perm-name">
+                  <span aria-hidden="true">🌐</span> <span data-i18n="sec_perm_internet_name">Internet</span>
+                </span>
+                <span class="perm-desc" data-i18n="sec_perm_internet_desc">Atualizar a base de dados de números de emergência</span>
+                <span class="perm-status perm-status--min" data-i18n="sec_perm_status_min">Mínimo</span>
+              </div>
+            </div>
+            <p class="policy-note" data-i18n="sec_perm_note">
+              <strong>Nota:</strong> nenhuma permissão é solicitada sem que você saiba.
+              O app funciona em modo offline para todas as funções essenciais.
+            </p>
+          </section>
+
+          <!-- SOBRE O SITE -->
+          <section class="policy-section" id="site" aria-labelledby="site-title">
+            <h2 class="policy-title" id="site-title" data-i18n="sec_site_title">Sobre o Site Web</h2>
+            <p data-i18n="sec_site_intro">O GlobalSOS Web é construído em HTML, CSS e JavaScript puro, sem dependências de rastreamento. Especificamente:</p>
+            <ul class="policy-list">
+              <li data-i18n="sec_site_item1"><strong>Sem Google Analytics</strong> ou qualquer ferramenta similar de analytics.</li>
+              <li data-i18n="sec_site_item2"><strong>Sem Meta Pixel</strong>, Google Ads ou qualquer pixel de terceiros.</li>
+              <li data-i18n="sec_site_item3"><strong>Sem cookies de terceiros.</strong> O único dado armazenado localmente é sua preferência de idioma (<code>gsos_lang</code> no <code>localStorage</code>).</li>
+              <li data-i18n="sec_site_item4">
+                <strong>Detecção de idioma por IP:</strong> ao carregar a página, uma requisição anônima
+                é feita ao <code>ipapi.co</code> para identificar seu país e sugerir o idioma correto.
+                Essa consulta é feita pelo seu navegador diretamente ao serviço, sem intermediação nossa.
+                Consulte a <a href="https://ipapi.co/privacy/" target="_blank" rel="noopener" class="policy-link">política de privacidade do ipapi.co</a>.
+              </li>
+              <li data-i18n="sec_site_item5">
+                <strong>Fontes externas:</strong> as fontes tipográficas são carregadas pelo Google Fonts.
+                Veja a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="policy-link">política de privacidade do Google</a>.
+              </li>
+            </ul>
+          </section>
+
+          <!-- BASE DE NÚMEROS -->
+          <section class="policy-section" id="dados-numeros" aria-labelledby="numeros-title">
+            <h2 class="policy-title" id="numeros-title" data-i18n="sec_data_title">Base de Dados de Números</h2>
+            <p data-i18n="sec_data_p1">
+              Os números de emergência exibidos no GlobalSOS são informações de domínio público,
+              compiladas de fontes oficiais dos governos e serviços de emergência de cada país.
+            </p>
+            <p data-i18n="sec_data_p2">
+              A base de dados é revisada e atualizada periodicamente para garantir precisão.
+              Se você identificar um número incorreto, entre em <a href="#contato" class="policy-link">contato</a> com a equipe.
+            </p>
+          </section>
+
+          <!-- SEUS DIREITOS -->
+          <section class="policy-section" id="direitos" aria-labelledby="direitos-title">
+            <h2 class="policy-title" id="direitos-title" data-i18n="sec_rights_title">Seus Direitos</h2>
+            <p data-i18n="sec_rights_p1">
+              Como o GlobalSOS não coleta dados pessoais identificáveis, não existem dados pessoais
+              seus armazenados em nossos sistemas para acessar, corrigir ou excluir.
+            </p>
+            <p data-i18n="sec_rights_p2">
+              Caso você resida em uma jurisdição com legislação de proteção de dados (como a
+              <strong>LGPD</strong> no Brasil, o <strong>GDPR</strong> na União Europeia ou a
+              <strong>CCPA</strong> na Califórnia), saiba que o GlobalSOS foi projetado para
+              estar em conformidade com esses regulamentos por padrão —
+              simplesmente por não coletar os dados que eles protegem.
+            </p>
+            <p data-i18n="sec_rights_p3">Se tiver alguma dúvida ou solicitação, entre em contato pelo canal abaixo.</p>
+          </section>
+
+          <!-- CONTATO -->
+          <section class="policy-section" id="contato" aria-labelledby="contato-title">
+            <h2 class="policy-title" id="contato-title" data-i18n="sec_contact_title">Contato</h2>
+            <p data-i18n="sec_contact_intro">
+              Tem dúvidas sobre esta política, encontrou um número incorreto ou quer
+              reportar uma preocupação de privacidade? Fale com a equipe:
+            </p>
+            <div class="contact-block">
+              <div class="contact-item">
+                <span aria-hidden="true">📧</span>
+                <span data-i18n="sec_contact_email">Em breve — canal de contato a ser definido.</span>
+              </div>
+              <div class="contact-item">
+                <span aria-hidden="true">💻</span>
+                <span data-i18n="sec_contact_github">
+                  Abra uma issue nos repositórios:
+                  <a href="https://github.com/og1421/GlobalSOS" target="_blank" rel="noopener" class="policy-link">iOS</a>
+                  ·
+                  <a href="https://github.com/og1421/GlobalSOS-Android" target="_blank" rel="noopener" class="policy-link">Android</a>
+                </span>
+              </div>
+            </div>
+            <p class="policy-note" style="margin-top: 24px;" data-i18n="sec_contact_note">
+              Esta política pode ser atualizada conforme o produto evolui.
+              Mudanças relevantes serão comunicadas nos repositórios do projeto.
+            </p>
+          </section>
+
+        </article>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="logo" aria-label="GlobalSOS">
+            <img src="icons/apple-touch-icon.png" width="28" height="28" class="logo__img" alt="" aria-hidden="true" />
+            <span class="logo__text">Global<span class="logo__sos">SOS</span></span>
+          </a>
+          <p class="footer__tagline" data-i18n="footer_tagline">Porque na emergência,<br/>cada segundo conta.</p>
+        </div>
+
+        <nav class="footer__links" aria-label="Links do rodapé">
+          <div class="footer__col">
+            <h3 class="footer__col-title" data-i18n="footer_platform">Plataforma</h3>
+            <a href="index.html#search"   class="footer__link" data-i18n="nav_search">Buscar</a>
+            <a href="index.html#features" class="footer__link" data-i18n="nav_features">Recursos</a>
+            <a href="index.html#app"      class="footer__link" data-i18n="nav_apps">Apps</a>
+            <a href="security.html"       class="footer__link" data-i18n="nav_security">Privacidade</a>
+            <a href="terms.html"          class="footer__link" data-i18n="nav_terms">Termos</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <p data-i18n="footer_copyright">© 2025 GlobalSOS. Feito para salvar vidas.</p>
+        <p class="footer__disclaimer" data-i18n="footer_disclaimer">Em caso de emergência real, ligue diretamente para o serviço de socorro local.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/i18n-security.js"></script>
+  <script>
+    'use strict';
+    document.addEventListener('DOMContentLoaded', () => {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      }
+
+      // Language
+      I18n.detectSync();
+      I18n.apply();
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => I18n.setLang(btn.dataset.lang));
+      });
+
+      window.addEventListener('gsos:lang-changed', () => I18n.apply());
+
+      I18n.detectFromIP();
+
+      // Theme toggle
+      const themeBtn = document.getElementById('themeToggle');
+      if (themeBtn) {
+        themeBtn.addEventListener('click', () => {
+          const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          try { localStorage.setItem('gsos_theme', next); } catch {}
+        });
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+          if (!localStorage.getItem('gsos_theme'))
+            document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        });
+      }
+
+      // Header scroll
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('scrolled', window.scrollY > 8);
+      }, { passive: true });
+
+      // Mobile nav
+      const toggle = document.getElementById('menuToggle');
+      const nav    = document.getElementById('mobileNav');
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        nav.setAttribute('aria-hidden', String(!open));
+      });
+      nav.querySelectorAll('.mobile-nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          nav.setAttribute('aria-hidden', 'true');
+        });
+      });
+
+      // TOC active link on scroll
+      const sections = document.querySelectorAll('.policy-section[id]');
+      const tocLinks = document.querySelectorAll('.toc-link');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(l => l.classList.remove('active'));
+            const active = document.querySelector(`.toc-link[href="#${entry.target.id}"]`);
+            active?.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+      sections.forEach(s => observer.observe(s));
+    });
+  </script>
+</body>
+</html>
